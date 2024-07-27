@@ -3,6 +3,7 @@ import MovieList from "../../components/MovieList/MovieList";
 import { fetchPopularMovies } from "../../services/api";
 import Loader from "../../components/Loader/Loader";
 import toast, { Toaster } from "react-hot-toast";
+import s from './HomePage.module.css'
 
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
@@ -26,12 +27,12 @@ const HomePage = () => {
     getMovies();
   }, []);
   return (
-    <>
-      <h2>Trending today</h2>
+    <div  className={s.homepage}>
+      <h1>Trending today</h1>
       <MovieList movies={movies} />
       {isLoading && <Loader/>}
       {isError && <Toaster/>}
-    </>
+    </div>
   );
 };
 
