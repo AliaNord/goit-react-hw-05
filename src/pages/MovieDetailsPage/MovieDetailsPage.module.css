@@ -1,0 +1,33 @@
+h1 {
+    margin-bottom: 50px;
+}
+.movieCard {
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #646cff;
+    img {
+        width: 500px;
+        height: 750px;
+        object-fit: cover;
+    }
+}
+p {
+    width: 500px;
+    margin-bottom: 20px;
+}
+h3 {
+    margin-bottom: 15px;
+}
+.genres {
+    display: flex;
+    gap: 10px;
+}
+.headlinks {
+    padding: 50px;
+    border-bottom: 1px solid #646cff;
+}
+.links {
+    display: flex;
+    gap: 10px;
+}
